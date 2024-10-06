@@ -38,6 +38,7 @@ section{
     right: 0;
     z-index: 99;
     border-bottom: var(--border);
+    background-color: var(--bg);
 
     & section{
         display: flex;
@@ -97,7 +98,7 @@ section{
         display: inline-block;
     }
 
-    & .coontent {
+    & .content {
         max-width: 60rem;
     }
 
@@ -116,3 +117,18 @@ section{
 
 }
 
+
+.about{
+ 
+    & .title{
+        font-size: 4rem;
+        color: var(--main-color);
+        text-align: center;
+    }
+
+    & .title span {
+        color: #fff;
+    }
+    
+
+}
