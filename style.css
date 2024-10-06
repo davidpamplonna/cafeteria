@@ -30,6 +30,17 @@ section{
     max-width: 1200px;
 }
 
+.btn{
+    background: var(--main-color);
+    color: #fff;
+    padding: 2rem 3rem;
+    border-radius: 4px;
+    font-size: 1.7rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
 
 .header{
     position: fixed;
@@ -121,6 +132,19 @@ section{
 
 }
 
+& .title{
+    font-size: 4rem;
+    color: var(--main-color);
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+}
+
+& .title span {
+    color: #fff;
+    text-transform: uppercase;
+}
+
 
 .about{
  
@@ -173,5 +197,122 @@ section{
 
     & .btn:hover{
         letter-spacing: 0.1rem;
+    }
+}
+
+.menu {
+
+    & .box-container{
+        display: grid;
+        grid-template-columns:  repeat(auto-fit, minmax(30rem, 1fr));
+        gap: 1.5rem;
+    }
+
+    & .box{
+        text-align: center;
+        border: var(--border);
+        padding: 5rem;
+        cursor: pointer;
+    }
+
+
+    & img{
+        height: 10rem;
+    }
+    
+    & h3{
+        color: #fff;
+        font-size: 2rem;
+        padding: 1rem 0;
+    }
+
+    & .price{
+        color: #fff;
+        font-size: 2.5rem;
+        padding: 0.5rem 0;
+    }
+
+    & .box span{
+        font-size: 1.5rem;
+        text-decoration: line-through;
+        font-weight: 100;
+    }
+
+    & .box:hover{
+        background-color: #fff;
+    }
+
+    & .box:hover >*{
+        color: var(--blak);
+    }
+}
+
+
+.review{
+
+   & .box-container{
+    display: grid;
+    grid-template-columns:  repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+   }
+
+    & .box{
+        border: var(--border);
+        text-align: center;
+        padding: 3rem 2rem;
+    }
+
+    & .box h3{
+        color: #fff;
+        font-size: 1.5rem;
+        padding: 1rem 0;
+    }
+
+    & .box p{
+        font-size: 1.5rem;
+        color: #fff;
+        padding: 2rem 0;
+        line-height: 1.8;
+    }
+
+    & .user{
+        height:  10rem;
+        width: 10rem;
+        border-radius: 50%;
+
+    }
+
+
+     & i{
+        color: #fff;
+        font-size: 20px;
+     }
+}
+
+.address{
+    display: flex;
+   align-items: center;
+    flex-direction: column;
+}
+
+.footer{
+    text-align: center;
+
+    & .share{
+        padding: 1rem 0;
+    }
+
+    & .share i{
+        margin: 0.3rem;
+        cursor: pointer;
+        border-radius: 50%;
+        padding: 1rem;
+        color: #fff;
+        font-size: 4rem;
+    }
+
+    & .share i:hover{
+        background-color: var(--main-color);
+        color: var(--blak);
     }
 }
