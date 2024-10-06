@@ -98,6 +98,10 @@ section{
         display: inline-block;
     }
 
+    & .btn:hover{
+        letter-spacing: 0.1rem;
+    }
+
     & .content {
         max-width: 60rem;
     }
@@ -124,11 +128,50 @@ section{
         font-size: 4rem;
         color: var(--main-color);
         text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 4rem;
     }
 
     & .title span {
         color: #fff;
+        text-transform: uppercase;
     }
     
+    & .row{
+        display: flex;
+        align-items: center;
+        background-color: var(--bg);
+        gap: 15px;
+    }
 
+    & .row .content {
+        padding: 2rem;
+    }
+
+    & .row .content h3{
+        font-size: 3rem;
+        color: #fff;
+    }
+
+    & .row .content p{
+        font-size: 1.6rem;
+        color: #fff;
+        padding: 1rem 0;
+        line-height: 1.8;
+    }
+
+    & .btn{
+        background: var(--main-color);
+        color: #fff;
+        padding: 2rem 3rem;
+        border-radius: 4px;
+        font-size: 1.7rem;
+        cursor: pointer;
+        margin-top: 1rem;
+        display: inline-block;
+    }
+
+    & .btn:hover{
+        letter-spacing: 0.1rem;
+    }
 }
