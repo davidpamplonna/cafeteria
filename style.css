@@ -54,7 +54,7 @@ section{
         font-weight: 700;
     }
 
-    & a:hover{
+    & .navbar a:hover{
         color: var(--main-color);
         border-bottom: 0.1rem solid var(--main-color);
         padding-bottom: 0.5rem;
@@ -72,3 +72,47 @@ section{
         transform: scale(1.2,1.2);
     }
 }
+
+.home-container{
+   background: url("https://i.ibb.co/t41TrTy/home-img.jpg" ) no-repeat;
+   height: 100vh;
+   background-position: center;
+   background-size: cover;
+
+   & section{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+   }
+
+
+    & .btn{
+        background: var(--main-color);
+        color: #fff;
+        padding: 2rem 3rem;
+        border-radius: 4px;
+        font-size: 1.7rem;
+        cursor: pointer;
+        margin-top: 1rem;
+        display: inline-block;
+    }
+
+    & .coontent {
+        max-width: 60rem;
+    }
+
+    & h3{
+        color: #fff;
+        font-size: 6rem;
+    }
+
+    & p{
+        color: #fff;
+        font-size: 2rem;
+        font-weight: 100;
+        line-height: 1.8;
+        padding: 1rem 0;
+    }
+
+}
+
